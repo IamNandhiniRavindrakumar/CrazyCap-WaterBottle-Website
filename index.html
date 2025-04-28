@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>waterbottle</title>
+                                 <!-- css link -->
+    <link rel="stylesheet" type="text/css" href="./style.css"/>
+                                 <!-- imported google fonts link -->
+    <link href="https://fonts.googleapis.com/css2?family=Oleo+Script:wght@400;700&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Tektur:wght@400..900&display=swap" rel="stylesheet">
+                                 <!-- imported font awesome icon link -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+      <!--  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!--  -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+<body>
+    <div class="l-container">
+<!-- ---------------------------------------------------------------- OVERALL -------------------------------------------------- -->
+        <!-- ---------------------------------- Nav ----------------------------------- -->
+        <div class="nav">
+            <div>
+                <h1>CrazyCap</h1>
+            </div>
+            <!-- tab and phone navbar -->
+            <div class=" side-bar">
+                <a onclick="closeBtn()"><i class="fa-solid fa-x"></i></a>
+                <a href="#page-1">Home</a>
+                <a href="#page-2-about">About</a>
+                <a href="#products">Products</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#sustainability">Sustainability</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#resource">Resource</a>
+                <a href="#contact">Contact</a>
+                <button>Shop Now</button>
+            </div>
+            <!-- lap and desktop navbar -->
+            <div class="nav-buttons">
+                <a href="#page-1">Home</a>
+                <a href="#page-2-about">About</a>
+                <a href="#products">Products</a>
+                <a href="#how-it-works">How it works</a>
+                <a href="#sustainability">Sustainability</a>
+                <a href="#testimonial">Testimonial</a>
+                <a href="#resource">Resource</a>
+                <a href="#contact">Contact</a>
+                <button>Shop Now</button>
+            </div>
+            <a onclick="showBtn()" class="menubar-icon"><i class="fa-solid fa-bars"></i></a>
+        </div>
+         <!-- --------------------------------- end of navbar ---------------------------------------- -->
+          <!-- -------------------------------- page 1 starts ---------------------------------------------- -->
+        <div class="page-1" id="page-1">
+            <div class="wrapper">
+                <div class="circle" id="circle"></div>
+                <div class="images">
+                 <img id="bot-without-cap" src="./assets/bottle/bottle_without_cap-removebg-preview.png"/>
+                 <img id="normal-bot-cap" src="./assets/bottle/normal_bottle_cap-removebg-preview.png"/>
+                 <img id="flying-bot-cap" src="./assets/bottle/flying_bottle_cap-removebg-preview.png"/>
+                 <img id="bottle" src="./assets/bottle/bottle-img-removebg-preview.png"/>
+                </div>
+                <div class="content" id="content">
+                    <h1>Safe Drinking Water in 60 seconds</h1>
+                    <p>purifies any source water  <i class="fa-solid fa-circle"></i>  Sterilizes your sport bottles</p>
+                    <button>Shop Now!</button>
+                </div>
+            </div>
+         
+         </div>
+        <!-- ---------------------------------- page 2 starts ---------------------------------------------- -->
+          <div class="page-2-about" id="page-2-about">
+            <div class="left-top-div"></div>
+                                              <!-- divided -->
+            <div class="right-top-div">
+                <ul class="forSlideIn">
+                    <li data-aos="fade-left" class="p2-animation"><i class="fa-regular fa-circle-check" style="color: #00e1ff;"></i> Integrated <br/> Deep UV LED</li>
+                    <li data-aos="fade-left" class="p2-animation"><i class="fa-regular fa-circle-check" style="color: #00e1ff;"></i> Cap measures <br/> just 2" tall </li>
+                    <li data-aos="fade-left" class="p2-animation"><i class="fa-regular fa-circle-check" style="color: #00e1ff;"></i> Fits most <br/> reusable bottles </li>
+                </ul>
+            </div>
+          </div>
+        <!-- ---------------------------------- page 3 about -------------------------------------------- -->
+          <div class="page-3-about">
+            <div class="left-bottom-div common">
+                <ul>
+                    <li data-aos="fade-right"><i class="fa-regular fa-circle-check" style="color: #00e1ff;"></i> Rechargeable <br/> on-the-go</li>
+                    <li data-aos="fade-right"><i class="fa-regular fa-circle-check" style="color: #00e1ff;"></i> 5% of sales to <br/> water.org </li>
+                </ul>
+                <button data-aos="fade-up">Shop Now</button>
+            </div>
+            <div class="right-bottom-div common">
+                <img data-aos="fade-right" src="./assets/about pics/holding_hands-removebg-preview.png"/>
+            </div>
+          </div>
+        <!-- ---------------------------------- page 4 products ------------------------------------------------ -->
+          <div class="page-4-products" id="products">
+            <div class="p4-start-div p4-com">
+                <h1 data-aos="fade-right" id="p4-start-div-h1">Science <br/> made <br/> stylish</h1>
+                <p data-aos="fade-right">
+                    CrazyCap uses an intelligent <br/> UV-C light to clean water and <br/> sanitize your bottle. <br/> Always stay hydrated in styles
+                </p>
+                <div data-aos="fade-right" class="p4-btn-div">
+                    <input class="sub-btn" type="email" placeholder="crazycapbottles@gmail.com"/>
+                    <button class="p4-btn">Get Tech</button>
+                </div>
+            </div>
+            <div class="p4-mid-div p4-com">
+                <div class="p4-circle" id="p4-circle">
+                  <img id="water-splash" src="./assets/about pics/water_img-removebg-preview.png"/>
+                </div>
+                <!-- <button data-aos="zoom-in" class="com-red-btn">
+                    Learn More
+                </button> -->
+            </div>
+            <div class="p4-end-div p4-com">
+                <img data-aos="fade-left" src="assets/about pics/three bottles with water effects.jpeg"/>
+            </div>
+          </div>
+        <!-- ---------------------------------- page-5-banner ------------------------------------------------ -->
+          <div class="page-5-banner">
+            <div class="main-pic" data-aos="zoom-in">
+                <img class="top-side-img" src="assets/how it works section\border black bottle.png" data-aos="zoom-in-left" data-aos-duration="1000"/>
+                <h1>The portable <br/> Water well that fits <br/> in your pocket</h1>
+                <button class="com-red-btn">
+                    Learn More
+                </button>
+                <img class="bottom-side-img" src="assets/how it works section\border beige bottle.png" data-aos="zoom-in-right" data-aos-duration="500"/>
+            </div>
+          </div>
+        <!-- ---------------------------------- page-6-benefits ----------------------------------------------- -->
+          <div class="page-6-benefits" id="how-it-works">
+                <div class="left">
+                    <h1  data-aos="fade-up">
+                        We believe <br/> clean drinking water is a right, <br/> not a privilege.
+                    </h1>
+                    <h2  data-aos="fade-up">
+                        That's Why CrazyCap puts portable water on top for:
+                    </h2>
+                    <ul  data-aos="fade-up">
+                        <li><i class="fa-regular fa-circle-check" style="color: #00e1ff; font-size: 35px;"></i> Remote hubs</li>
+                        <li><i class="fa-regular fa-circle-check" style="color: #00e1ff; font-size: 35px;"></i> Disaster relief</li>
+                        <li><i class="fa-regular fa-circle-check" style="color: #00e1ff; font-size: 35px;"></i> Outdoor adventurers</li>
+                        <li><i class="fa-regular fa-circle-check" style="color: #00e1ff; font-size: 35px;"></i> Health & wellness enthusiasts</li>
+                    </ul>
+                </div>
+                <div class="right" data-aos="fade-left">
+                  <img src="assets/how it works section/drinking_pose-removebg-preview.png"/>
+                </div>
+          </div>
+        <!-- ---------------------------------- page-7-slider -------------------------------------------------- -->
+          <div class="page-7-slider" id="sustainability">
+                <h3>Our revolutionary deep UV Sterilization DOES NOT filter MICRO-ORGANISMS</h3>
+                <h1><span>It Destroys Them</span> outright for the purest tasting wasting</h1>
+                <div class="slider">
+                    <i id="left" class="fa-solid fa-circle-chevron-right" style="color: #000000;"></i>
+                    <div class="carousel">
+                        <img src="assets/promotion/green shirt holding bottle.png" alt="bottle-image" draggable="false"  data-aos="fade-up"/>
+                        <img src="assets/promotion/travelling bottle.png" alt="bottle-image" draggable="false" data-aos="fade-down"/>
+                        <img src="assets/promotion/two bottles.jpeg" alt="bottle-image" draggable="false"  data-aos="fade-up"/>
+                        <img src="assets/promotion/white bottle.jpeg" alt="bottle-image" draggable="false" data-aos="fade-down"/>
+                        <img src="assets/how it works section/border beige bottle.png" alt="bottle-image" draggable="false"/>
+                        <img src="assets/how it works section/border black bottle.png" alt="bottle-image" draggable="false"/>
+                    </div>
+                    <i id="right"class="fa-solid fa-circle-chevron-right" style="color: #000000;"></i>
+                </div>
+          </div>
+        <!-- ---------------------------------- page-8 --------------------------------------------------------- -->
+          <div class="page-8-snow-bg"  data-aos="fade-up">
+                <h2 data-aos="fade-left">Explore The World?</h2>
+                <h1>Drink It <br/> All In</h1>
+                <img src="assets/brown_bottle-removebg-preview.png" data-aos="fade-right"/>
+          </div>
+        <!-- ---------------------------------- page 9 short page ----------------------------------------------- -->
+          <div class="page-9">
+                <h2  data-aos="fade-right">No filters to replace. No batteries to lose.</h2>
+                <h2  data-aos="fade-right">Just a maintenance-free solution designed to perform.</h2>
+                <div>
+                    <button class="pg-9-btn" data-aos="fade-up-left">Learn More</button>
+                    <button class="pg-9-help-btn" data-aos="fade-up-left">What else Can I do?</button>
+                </div>
+          </div>
+        <!-- ---------------------------------- page-10-set-of-bottles ----------------------------------------- -->
+          <div class="page-10-set-of-bottles">
+                <img class="rotate-bottle bottle-1" src="./assets/products/pink bottle.png" alt="bottle-img" data-aos="fade-down"
+                data-aos-easing="linear"
+                data-aos-duration="1500"/>
+                <img class="rotate-bottle bottle-2" src="./assets/products/dark blue bottle.png" alt="bottle-img"  data-aos="fade-right"
+                data-aos-offset="300"
+                data-aos-easing="ease-in-sine"/>
+                <img class="rotate-bottle bottle-3" src="./assets/products/blue bottle.png" alt="bottle-img" data-aos="fade-up"
+                data-aos-duration="3000"/>
+                <img class="rotate-bottle bottle-4" src="./assets/products/black bottle.png" alt="bottle-img" data-aos="fade-left" />
+                <h1>Yes It's fits <br/> your favourite <br/> bottle</h1>
+          </div>
+        <!-- ---------------------------------- page-11-before-review ------------------------------------------ -->
+          <div class="page-11-before-review">
+                <h1 data-aos="fade-up-right">CrazyCap pairs <br/> beautifully with our <br/> original bottle.</h1>
+                <p data-aos="fade-up-left">Already have one you love? we designed it to fit most <br/> 9-, 12-, 17-, 21-ounce cola-style bottles.</p>
+                <div class="pg-11-btn" data-aos="fade-up">See Why</div>
+          </div>
+        <!-- ---------------------------------- page-12-reviews ------------------------------------------------ -->
+          <div class="page-12-reviews" id="testimonial">
+                <h1 data-aos="fade-left" class="page-12-reviews-heading">Expert Reviews</h1>
+                <div class="pg-12-card-wrapper">
+                    <div data-aos="fade-up" class="pg-12-card">
+                        <h1 data-aos="fade-up">Best overall Self-Cleaning water bottle</h1>
+                        <p data-aos="fade-up">I think the best thing about CrazyCap is that you can buy just the cap. which fits on many different water bottles.</p>
+                        <h2 data-aos="fade-up"> See Full review</h2>
+                    </div>
+                    <div data-aos="fade-up" class="pg-12-card">
+                        <h1 data-aos="fade-up">Best overall Self-Cleaning water bottle</h1>
+                        <p data-aos="fade-up">I think the best thing about CrazyCap is that you can buy just the cap. which fits on many different water bottles.</p>
+                        <h2 data-aos="fade-up"> See Full review</h2>
+                    </div>
+                    <div data-aos="fade-up" class="pg-12-card">
+                        <h1 data-aos="fade-up">Best overall Self-Cleaning water bottle</h1>
+                        <p data-aos="fade-up">I think the best thing about CrazyCap is that you can buy just the cap. which fits on many different water bottles.</p>
+                        <h2 data-aos="fade-up"> See Full review</h2>
+                    </div>
+                </div>
+          </div>
+        <!-- ---------------------------------- page-13-products-list ------------------------------------------- -->
+          <div class="page-13-products-list" id="resource">
+                    <div data-aos="zoom-in">
+                        <h1>We make water social</h1>
+                        <h3>@crazycapbottle</h3>
+                    </div>
+                  
+                    <div class="page-13-img-wrapper">
+                        <img data-aos="zoom-in-right" src="./assets/last section/grp bottle 1st.png" alt="bottle-img"/>
+                        <img data-aos="zoom-in-left" src="./assets/last section/grp bottle 2nd.png" alt="bottle-img"/>
+                        <img data-aos="zoom-in-right" src="./assets/last section/grp bottle 3rd.png" alt="bottle-img"/>
+                        <img data-aos="zoom-in-left" src="./assets/last section/grp bottle 4th.png" alt="bottle-img"/>
+                    </div>
+          </div>
+        <!-- ---------------------------------- page-14-contact-page --------------------------------------------- -->
+          <div class="page-14-contact-page" id="contact">
+                    <h1 data-aos="zoom-out-left">Let's stay connected</h1>
+                    <div data-aos="fade-up">
+                        <input class="sub-btn" type="email" placeholder="crazycapbottles@gmail.com"/>
+                        <button>Subscribe</button>
+                    </div>
+                    <a href="#page-1" class="go-up"><i class="fas fa-arrow-up"></i></a>
+          </div>
+        <!-- ---------------------------------------- footer ----------------------------------------------------- -->
+          <footer>
+                    <h1>
+                        CrazyCap
+                    </h1>
+                    <div class="contact-icons">
+                        <i class="fa-brands fa-x-twitter"></i>
+                        <i class="fa-brands fa-youtube"></i>
+                        <i class="fa-brands fa-linkedin"></i>
+                        <i class="fa-brands fa-instagram"></i>
+                        <i class="fa-brands fa-facebook"></i>
+                    </div>
+          </footer>
+
+
+<!-- ----------------------------------------------------------------------------------------------------------------- -->
+    </div>
+
+    <script src="./script.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+      </script>
+</body>
+
+</html>

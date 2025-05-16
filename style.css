@@ -289,13 +289,13 @@ body{
     
 }
 
-.p2-animation{
+/* .p2-animation{ */
     /* transform: translateX(400px); */
     /* animation: slideFromRight ease forwards; */
     /* animation-delay: calc(0.2s * var(--i)); */
     /* animation-timeline: view();
     animation-range: entry 0% cover 40%; */
-}
+/* } */
 
 .forSlideIn:nth-child(1){
     --i:0;
@@ -541,7 +541,7 @@ body{
 /* -------------------------------------------------------------------------------- */
 .page-7-slider{
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -698,7 +698,7 @@ body{
 /* ------------------------------------------------------------------------------------------------------ */
 .page-11-before-review{
     width:100%;
-    height: 100vh;
+    min-height: 100vh;
     /* background-color: blueviolet; */
     display: flex;
     flex-direction: column;
@@ -851,7 +851,53 @@ footer{
     .nav-buttons {
         display: none;
     }
+
+    .page-1{
+    height:100vh;
+    width:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
+.page-1 .wrapper{
+    position: absolute;
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    padding-top: 20px;
+}
+.page-1 .wrapper .circle{
+    position: absolute;
+    width: 70px;
+    height: 70px;
+    border: 4px solid rgb(128, 206, 236);
+    border-radius: 50%;
+    transition: 1s ease-in-out;
+}
+
+.page-1 .wrapper .content{
+    width: 300px;
+    position: absolute;
+    text-align: center;
+    scale: 0.1;
+    transition: 1s ease-in;
+}
+.page-1 .wrapper .content h1{
+    line-height: 1.2;
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.page-1 .wrapper .content p .fa-circle{
+    padding: 0 5px;
+    font-size: 4px;
+}
+
+}
+
 
 
 /* @media only screen and (min-width:400px) and (max-width:768px) {
@@ -1067,7 +1113,7 @@ footer{
 }
 @media screen and (max-width:550px) {
      .page-4-products{
-        min-height:100vh;
+        min-height:40vh;
         width:100%;
         display: flex;
        flex-direction: column;
@@ -1079,7 +1125,7 @@ footer{
         padding: 30px 15px 10px;
         display: flex;
         flex-direction: column;
-        gap:20px;
+        /* gap:20px; */
     }
     .p4-start-div h1{
         font-size: 40px;
@@ -1112,23 +1158,38 @@ footer{
     
     .p4-mid-div{
         width:100%;
-        padding:50px 30px 20px;
+        padding:40px 30px 20px;
         display: flex;
         flex-direction: column;
         justify-content: center;     
     }
     .p4-circle{
-        width:200px;
-        height:200px;
+        width:100px;
+        height:100px;
+    }
+
+    #water-splash{
+        width:150px;
+        /* display: none; */
     }
     
     .p4-end-div{
-         display: none;  
+        position:relative;
+        left:100px;
+        bottom:-70px;
+        transform:rotate(-50deg)
     }
+
+     .p4-end-div img{
+        background-color: transparent;
+        width:80px
+     }
 
 }
 /* --------------------------------------------- page 5 responsive --------------------------------------------------------------------- */
 @media screen and (max-width:900px) {
+
+
     .main-pic{
         height:50%;
     }
@@ -1155,7 +1216,7 @@ footer{
 }
 @media screen and (max-width:550px) {
     .page-5-banner{
-        min-height: 60vh;
+        min-height: 40vh;
         width:100%;
     }
     .main-pic{
@@ -1169,15 +1230,15 @@ footer{
     }
     .top-side-img{
         position: absolute;
-        width: 80px;
+        width: 100px;
         right:5%;
         top:-15%;
-        border-radius: 100px;
+        border-radius: 50px;
     }
     .bottom-side-img{
         position: absolute;
-        width: 90px;
-        height: 90px;
+        width: 110px;
+        height: 110px;
         border-radius: 100px;
         left:5%;
         bottom:-14%;
@@ -1229,18 +1290,19 @@ footer{
 
 @media screen and (max-width:550px){
     .page-6-benefits{
-        min-height:100vh;
+        min-height:80vh;
         width:100%;
         display: flex;
         flex-direction: column;
         padding:30px 20px 0px;
-        margin-bottom: 40px;
+        margin-bottom: 0px;
         background: linear-gradient(to right,rgba(78, 78, 77, 0.3),rgba(245, 245, 220,.3)),url("assets/how it works section/drinking_pose-removebg-preview.png");
         background-repeat: no-repeat;
         background-size: contain;
         background-position-x: right;
     }
     .left{
+        min-height:70vh ;
         width:100%;
         height:inherit;
         padding:10px 20px;
@@ -1279,9 +1341,25 @@ footer{
     }
 }
 @media screen and (max-width:550px) {
+
     .page-7-slider{
-        margin: 20px 0px 40px;
+    width:100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:25px;
+    overflow: hidden;
+    padding: 20px 30px 20px;
+    margin: 10px 0px 30px;
+    text-align: center;
+}
+
+    .page-7-slider{
+         min-height: 70vh;
         text-align: center;
+         padding: 20px 30px 10px;
     }
     .carousel img{
         width:100%;
@@ -1300,7 +1378,7 @@ footer{
     .page-8-snow-bg{
         height:70vh;
         gap:60px;
-        margin: 50px 0px;
+        margin: 10px 0px;
     }
     .page-8-snow-bg h1{
         font-size: 70px;
@@ -1398,15 +1476,35 @@ footer{
 @media screen and (max-width:550px) {
     .page-10-set-of-bottles{
         width:100%;
-        height:65vh;
-        margin-bottom: 40px;  
+        height:65vh; 
     }
     .rotate-bottle{
-        width: 220px;
+        width: 200px;
     }
+
     .page-10-set-of-bottles h1{
         font-size: 40px;
         line-height: 1;
+    }
+ 
+    .rotate-bottle{
+        width: 250px;
+    }
+    .bottle-1{
+        left: -5%;
+        bottom:10%;
+    }
+    .bottle-2{
+        left: 27%;
+        top: 3%;
+    }
+    .bottle-3{
+        right:25%;
+        bottom: -10%;
+    }
+    .bottle-4{
+        right: -8%;
+        bottom: 6%;
     }
 }
 /* ----------------------------------------------------- page 11 responsive ----------------------------------------------------- */
@@ -1425,7 +1523,7 @@ footer{
 @media screen and (max-width:550px) {
     .page-11-before-review{
         width:100%;
-        min-height: 40vh;
+        min-height: 60vh;
         /* background-color: blueviolet; */
         display: flex;
         flex-direction: column;
